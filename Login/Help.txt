@@ -1,5 +1,0 @@
-Kill a port in windows:
-
-netstat -ano | findstr :<PORT>
-
-taskkill /PID <PID> /F
