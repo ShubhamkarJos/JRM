@@ -20,8 +20,25 @@
 		<div class="map" id="map"></div>
 	</center>
 	<script>
-		
+		var map;
+		var InforObj = []
+		vaf centerCords = {
+			lat: 18.51957,
+			lng: 73.85535
+		};
+
+		window.onload = function(){
+			initMap();
+		};
+
+		function initMap(){
+			map = new google.maps.Map(document.getElementById('map'), {
+				zoon: 15,
+				center: centerCords
+			});
+		}
 	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLcUKoFbW5vrlnMaQMUnSoVbG2LovoNL4&callback=initMap"></script>
 
 </body>
 </html>
